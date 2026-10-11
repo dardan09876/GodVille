@@ -1,21 +1,16 @@
-// Navigation elements
+import { loadPage } from "./navigation.js";
+
 const remoteNav = document.getElementById("remoteNav");
 const diaryNav = document.getElementById("diaryNav");
 const heroNav = document.getElementById("heroNav");
 const stuffNav = document.getElementById("stuffNav");
 
-// Navigation event listeners
-remoteNav.addEventListener("click", () => {
-  window.location.href = "remote.html";
-});
+remoteNav.addEventListener("click", () => loadPage("remote"));
 
-diaryNav.addEventListener("click", () => {
-  window.location.href = "index.html";
-});
+diaryNav.addEventListener("click", () => loadPage("diary"));
 
-heroNav.addEventListener("click", () => {
-  window.location.href = "hero.html";
-});
-stuffNav.addEventListener("click", () => {
-  window.location.href = "stuff.html";
-});
+heroNav.addEventListener("click", () => loadPage("hero"));
+
+stuffNav.addEventListener("click", () => loadPage("stuff"));
+
+loadPage("diary");

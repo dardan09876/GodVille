@@ -28,7 +28,7 @@ body {
   justify-content: space-around;
 }
 
-#navButton button {
+.navButton button {
   background-color: #777777;
   color: #ffffff;
   border: none;
@@ -37,7 +37,7 @@ body {
   border-radius: 5px;
 }
 
-#navButton button:hover {
+.navButton button:hover {
   background-color: #999999;
 }
 
