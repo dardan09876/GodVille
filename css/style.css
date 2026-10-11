@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #333333;
+}
+
+#gameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #444444;
+}
+
+#topBar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #555555;
+  border: 1px solid #111111;
+}
+
+#navButtons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+#navButton button {
+  background-color: #777777;
+  color: #ffffff;
+  border: none;
+  padding: 10px 100px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#navButton button:hover {
+  background-color: #999999;
+}
+
+#secondBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #666666;
+}
+
+#thirdBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #666666;
+  border-bottom: 1px solid #111111;
+}
+
+#mainContent {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  height: calc(100vh - 120px);
+  background-color: #888888;
+}
+
+#remoteContent button {
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#remoteContent button:hover {
+  background-color: #555555;
+}
