@@ -1,4 +1,5 @@
 import { loadPage } from "./navigation.js";
+import { startGameLoop } from "./gameloop.js";
 
 const remoteNav = document.getElementById("remoteNav");
 const diaryNav = document.getElementById("diaryNav");
@@ -14,3 +15,5 @@ heroNav.addEventListener("click", () => loadPage("hero"));
 stuffNav.addEventListener("click", () => loadPage("stuff"));
 
 loadPage("diary");
+
+startGameLoop();
