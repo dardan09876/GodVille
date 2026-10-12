@@ -1,5 +1,6 @@
 import { gameState } from "./gameState.js";
 import { addEvent } from "./eventLog.js";
+import { randomTravelEvent } from "./eventSystem.js";
 
 export function updateHero() {
   const hero = gameState.hero;
@@ -15,6 +16,8 @@ export function updateHero() {
 
     case "traveling":
       hero.actionProgress++;
+
+      randomTravelEvent();
 
       addEvent(
         `Hero is traveling: ${hero.actionProgress}/${hero.actionDuration}`,

@@ -6,5 +6,5 @@ export function gameTick() {
 }
 
 export function startGameLoop() {
-  setInterval(gameTick, 10000);
+  setInterval(gameTick, 3000);
 }
