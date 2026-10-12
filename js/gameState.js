@@ -8,10 +8,14 @@ export const gameState = {
     gold: 0,
     currentQuest: null,
     inventory: [],
+    currentAction: "idle",
+    actionProgress: 0,
+    actionDuration: 0,
   },
 
   godPower: 50,
   currentEnemy: null,
   diary: [],
-  currentAction: "idle",
 };
+
+export const events = [];
